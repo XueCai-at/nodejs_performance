@@ -1,5 +1,6 @@
 import express from "express";
 
+//////////////////////////////// Web app ////////////////////////////////
 const app = express();
 const bigObject = makeBigObject(2000, 2);
 // const bigObject = makeBigObject(24, 2);  // < 8K
@@ -45,7 +46,6 @@ app.listen("/tmp/sock", () =>
 );
 
 //////////////////////////////// Utils below ////////////////////////////////
-
 function makeBigObject(leaves, depth) {
   if (depth === 0) {
     return "howdy";
