@@ -21,11 +21,6 @@ async function requestHandler({ requestIndex, req, res }, callback) {
     firstRequestStartTime = process.hrtime.bigint();
   }
 
-  // add some async gaps
-  for (let i = 0; i < 20; ++i) {
-    await new Promise((resolve) => setTimeout(resolve, 0));
-  }
-
   console.log(
     `[${getTimeMs()}] Serializing response for request ${requestIndex}...`
   );
