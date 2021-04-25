@@ -1,0 +1,121 @@
+>> init: executionAsyncId: 0 | asyncId: 8, type: "PIPESERVERWRAP", triggerAsyncId: 0, resource: Pipe
+>> init: executionAsyncId: 0 | asyncId: 9, type: "TickObject", triggerAsyncId: 8, resource: Object
+>> before: executionAsyncId: 9 | asyncId: 9
+Example app listening on Unix domain socket /tmp/sock!
+>> init: executionAsyncId: 9 | asyncId: 13, type: "TickObject", triggerAsyncId: 9, resource: Object
+>> after: executionAsyncId: 9 | asyncId: 9, durationMs: 1
+>> before: executionAsyncId: 13 | asyncId: 13
+>> after: executionAsyncId: 13 | asyncId: 13, durationMs: 0
+>> destroy: executionAsyncId: 0 | asyncId: 9
+>> destroy: executionAsyncId: 0 | asyncId: 13
+>> init: executionAsyncId: 0 | asyncId: 14, type: "PIPEWRAP", triggerAsyncId: 8, resource: Pipe
+>> before: executionAsyncId: 8 | asyncId: 8
+>> init: executionAsyncId: 8 | asyncId: 15, type: "Timeout", triggerAsyncId: 14, resource: Timeout
+>> init: executionAsyncId: 8 | asyncId: 16, type: "HTTPINCOMINGMESSAGE", triggerAsyncId: 14, resource: HTTPServerAsyncResource
+>> init: executionAsyncId: 8 | asyncId: 17, type: "TickObject", triggerAsyncId: 14, resource: Object
+>> after: executionAsyncId: 8 | asyncId: 8, durationMs: 1
+>> before: executionAsyncId: 17 | asyncId: 17
+>> after: executionAsyncId: 17 | asyncId: 17, durationMs: 0
+>> destroy: executionAsyncId: 0 | asyncId: 17
+>> before: executionAsyncId: 16 | asyncId: 16
+>> init: executionAsyncId: 16 | asyncId: 18, type: "PROMISE", triggerAsyncId: 16, resource: PromiseWrap
+>> init: executionAsyncId: 16 | asyncId: 19, type: "Immediate", triggerAsyncId: 16, resource: Immediate
+>> after: executionAsyncId: 16 | asyncId: 16, durationMs: 2
+>> before: executionAsyncId: 16 | asyncId: 16
+>> init: executionAsyncId: 16 | asyncId: 20, type: "TickObject", triggerAsyncId: 16, resource: Object
+>> after: executionAsyncId: 16 | asyncId: 16, durationMs: 0
+>> before: executionAsyncId: 16 | asyncId: 16
+>> after: executionAsyncId: 16 | asyncId: 16, durationMs: 0
+>> before: executionAsyncId: 20 | asyncId: 20
+>> after: executionAsyncId: 20 | asyncId: 20, durationMs: 0
+>> destroy: executionAsyncId: 0 | asyncId: 20
+>> before: executionAsyncId: 19 | asyncId: 19
+>> init: executionAsyncId: 19 | asyncId: 21, type: "PROMISE", triggerAsyncId: 19, resource: PromiseWrap
+>> init: executionAsyncId: 19 | asyncId: 22, type: "PROMISE", triggerAsyncId: 19, resource: PromiseWrap
+[0] Serializing response for request 1...
+>> init: executionAsyncId: 19 | asyncId: 23, type: "TickObject", triggerAsyncId: 19, resource: Object
+[324] Sending 55MB response for request 1...
+>> [456] init: executionAsyncId: 19 | asyncId: 24, type: "Timeout", triggerAsyncId: 19, resource: Timeout
+>> [458] init: executionAsyncId: 19 | asyncId: 25, type: "WRITEWRAP", triggerAsyncId: 14, resource: WriteWrap
+[458] - Handler done for request 1 -
+>> [458] init: executionAsyncId: 19 | asyncId: 26, type: "PROMISE", triggerAsyncId: 22, resource: PromiseWrap
+>> [458] after: executionAsyncId: 19 | asyncId: 19, durationMs: 458, event loop blocked!
+>> [458] before: executionAsyncId: 23 | asyncId: 23
+>> [458] after: executionAsyncId: 23 | asyncId: 23, durationMs: 0
+>> [458] before: executionAsyncId: 26 | asyncId: 26
+>> [458] after: executionAsyncId: 26 | asyncId: 26, durationMs: 0
+>> [459] destroy: executionAsyncId: 0 | asyncId: 18
+>> [459] destroy: executionAsyncId: 0 | asyncId: 12
+>> [459] destroy: executionAsyncId: 0 | asyncId: 10
+>> [459] destroy: executionAsyncId: 0 | asyncId: 11
+>> [459] destroy: executionAsyncId: 0 | asyncId: 19
+>> [459] destroy: executionAsyncId: 0 | asyncId: 23
+>> [466] before: executionAsyncId: 25 | asyncId: 25
+>> [466] init: executionAsyncId: 25 | asyncId: 27, type: "TickObject", triggerAsyncId: 25, resource: Object
+>> [466] init: executionAsyncId: 25 | asyncId: 28, type: "TickObject", triggerAsyncId: 25, resource: Object
+>> [466] init: executionAsyncId: 25 | asyncId: 29, type: "Timeout", triggerAsyncId: 25, resource: Timeout
+>> [466] res.finish: executionAsyncId: 25 |
+[466] -- Took 142ms to flush response for request 1 --
+>> [466] init: executionAsyncId: 25 | asyncId: 30, type: "TickObject", triggerAsyncId: 25, resource: Object
+>> [466] after: executionAsyncId: 25 | asyncId: 25, durationMs: 1
+>> [466] before: executionAsyncId: 27 | asyncId: 27
+>> [466] init: executionAsyncId: 27 | asyncId: 31, type: "TickObject", triggerAsyncId: 27, resource: Object
+>> [466] init: executionAsyncId: 27 | asyncId: 32, type: "TickObject", triggerAsyncId: 27, resource: Object
+>> [466] init: executionAsyncId: 27 | asyncId: 33, type: "TickObject", triggerAsyncId: 27, resource: Object
+>> [466] after: executionAsyncId: 27 | asyncId: 27, durationMs: 0
+>> [466] before: executionAsyncId: 28 | asyncId: 28
+>> [467] res.close: executionAsyncId: 28 |
+
+Between request 1 resSendEnd and request 1 resFinish
+  - total time: 8234 us
+  - total cpu time: 194 us
+  - total idle time: 8040 us
+  - number of sync operations: 3
+
+>> [467] after: executionAsyncId: 28 | asyncId: 28, durationMs: 0
+>> [467] before: executionAsyncId: 30 | asyncId: 30
+>> [467] after: executionAsyncId: 30 | asyncId: 30, durationMs: 0
+>> [467] before: executionAsyncId: 31 | asyncId: 31
+>> [467] after: executionAsyncId: 31 | asyncId: 31, durationMs: 0
+>> [467] before: executionAsyncId: 32 | asyncId: 32
+>> [467] after: executionAsyncId: 32 | asyncId: 32, durationMs: 0
+>> [467] before: executionAsyncId: 33 | asyncId: 33
+>> [467] after: executionAsyncId: 33 | asyncId: 33, durationMs: 0
+>> [467] destroy: executionAsyncId: 0 | asyncId: 15
+>> [467] destroy: executionAsyncId: 0 | asyncId: 27
+>> [467] destroy: executionAsyncId: 0 | asyncId: 28
+>> [467] destroy: executionAsyncId: 0 | asyncId: 30
+>> [467] destroy: executionAsyncId: 0 | asyncId: 31
+>> [467] destroy: executionAsyncId: 0 | asyncId: 32
+>> [467] destroy: executionAsyncId: 0 | asyncId: 33
+>> [467] destroy: executionAsyncId: 0 | asyncId: 25
+>> [467] before: executionAsyncId: 14 | asyncId: 14
+>> [467] init: executionAsyncId: 14 | asyncId: 34, type: "TickObject", triggerAsyncId: 14, resource: Object
+>> [467] init: executionAsyncId: 14 | asyncId: 35, type: "TickObject", triggerAsyncId: 14, resource: Object
+>> [467] after: executionAsyncId: 14 | asyncId: 14, durationMs: 0
+>> [467] before: executionAsyncId: 34 | asyncId: 34
+>> [468] init: executionAsyncId: 34 | asyncId: 36, type: "TickObject", triggerAsyncId: 34, resource: Object
+>> [468] after: executionAsyncId: 34 | asyncId: 34, durationMs: 0
+>> [468] before: executionAsyncId: 35 | asyncId: 35
+>> [468] after: executionAsyncId: 35 | asyncId: 35, durationMs: 0
+>> [468] before: executionAsyncId: 36 | asyncId: 36
+>> [468] init: executionAsyncId: 36 | asyncId: 37, type: "SHUTDOWNWRAP", triggerAsyncId: 14, resource: ShutdownWrap
+>> [468] after: executionAsyncId: 36 | asyncId: 36, durationMs: 0
+>> [469] destroy: executionAsyncId: 0 | asyncId: 34
+>> [469] destroy: executionAsyncId: 0 | asyncId: 35
+>> [469] destroy: executionAsyncId: 0 | asyncId: 36
+>> [469] before: executionAsyncId: 37 | asyncId: 37
+>> [470] init: executionAsyncId: 37 | asyncId: 38, type: "TickObject", triggerAsyncId: 37, resource: Object
+>> [470] after: executionAsyncId: 37 | asyncId: 37, durationMs: 1
+>> [470] before: executionAsyncId: 38 | asyncId: 38
+>> [470] after: executionAsyncId: 38 | asyncId: 38, durationMs: 0
+>> [470] destroy: executionAsyncId: 0 | asyncId: 29
+>> [470] destroy: executionAsyncId: 0 | asyncId: 38
+>> [470] destroy: executionAsyncId: 0 | asyncId: 37
+>> [470] before: executionAsyncId: 14 | asyncId: 14
+>> [470] after: executionAsyncId: 14 | asyncId: 14, durationMs: 0
+>> [471] destroy: executionAsyncId: 0 | asyncId: 16
+>> [471] destroy: executionAsyncId: 0 | asyncId: 14
+>> [821] before: executionAsyncId: 24 | asyncId: 24
+>> [822] after: executionAsyncId: 24 | asyncId: 24, durationMs: 0
+>> [4751] destroy: executionAsyncId: 0 | asyncId: 24
