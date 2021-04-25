@@ -56,7 +56,7 @@ async function requestHandler({ requestIndex, req, res }) {
   }
 
   // add some async gaps
-  for (let i = 0; i < 20; ++i) {
+  for (let i = 0; i < 14; ++i) {
     await new Promise((resolve) => setTimeout(resolve, 0));
   }
 
